@@ -1,7 +1,5 @@
 
 ro.product.first_api_level=28
-ro.vendor.build.date=Sat Nov 3 21:34:50 CST 2018
-ro.vendor.build.date.utc=1541252090
 ro.vendor.build.fingerprint=OnePlus/OnePlus6T/OnePlus6T:9/PKQ1.180716.001/1811032036:user/release-keys
 ro.vendor.build.security_patch=2018-09-05
 ro.vendor.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi

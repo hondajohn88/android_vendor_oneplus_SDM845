@@ -40,6 +40,18 @@ on post-fs-data
     mkdir /data/theme 0775 system system
     mkdir /data/mdm 0775 system system
     mkdir /data/theme_storage 0775 system system
+# liuyan@bsp 2018/06/18 add for fingerprint
+    mkdir /data/gf_data 0755 system system
+    mkdir /data/gf_data/factory_test 0755 system system
+    mkdir /data/gf_data/authenticate 0755 system system
+    mkdir /data/gf_data/enroll 0755 system system
+    mkdir /data/gf_data/encrypted_data 0755 system system
+    mkdir /data/gf_data/Bmp 0755 system system
+
+    mkdir /data/vendor 0771 root root
+    mkdir /data/vendor_ce 0771 root root
+    mkdir /data/vendor_de 0771 root root
+    mkdir /data/vendor/hardware 0771 root root
     #mediaserver, lifei add for Watchdog monitoring mediaextractor process. 2017/08/11
     mkdir /mnt/vendor/persist/hdcp/media_dump 0770 mediaex mediadrm
     mkdir /data/reserve-lib 0775 system system
@@ -86,6 +98,7 @@ on boot
     #liuyan 2017/7/27 add for goodix fp
     chmod 0666 /dev/goodix_fp
     chmod 0666 /dev/silead_fp
+    chmod 0666 /dev/qbt1000
     chown system system /dev/silead_fp
     #NFC, ruanbanmao add for 15801 nfc. 2015/10/19
     setprop ro.nfc.port "I2C"
